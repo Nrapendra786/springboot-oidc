@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: [your google client id]
+            client-secret: [your google client secret]
+        provider:
+           custom-google:
+               issuer-uri: https://accounts.google.com
+
+
+server:
+  port: 8081
+
